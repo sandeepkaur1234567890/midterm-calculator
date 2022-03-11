@@ -37,83 +37,83 @@ public class MainActivity extends AppCompatActivity {
         btnClear=(Button)findViewById(R.id.btnClear);
 
         ed1=(EditText) findViewById(R.id.editText);
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"1"));
+                ed1.setText(ed1.getText() + "1");
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"2"));
+                ed1.setText(ed1.getText() + "2");
             }
         });
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"3"));
+                ed1.setText(ed1.getText() + "3");
             }
         });
 
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"4"));
+                ed1.setText(ed1.getText() + "4");
             }
         });
 
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"5"));
-            }
+                ed1.setText(ed1.getText() + "5"); }
         });
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"6"));
+                ed1.setText(ed1.getText() + "6");
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"7"));
+                ed1.setText(ed1.getText() + "7");
             }
         });
 
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"8"));
+                ed1.setText(ed1.getText() + "8");
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"9"));
+                ed1.setText(ed1.getText() + "9");
             }
         });
 
         btnDot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ed1.setText((ed1.getText()+"."));
+                ed1.setText(ed1.getText() + ".");
             }
         });
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ed1==null){
+                if (ed1 == null){
                     ed1.setText("");
                 }
                 else {
-                    Res1=Float.parseFloat(ed1.getText()+"");
-                    Add=true;
+                    Res1 = Float.parseFloat(ed1.getText() + "");
+                    Add = true;
                     ed1.setText(null);
                 }
             }
@@ -122,12 +122,12 @@ public class MainActivity extends AppCompatActivity {
         btnSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ed1==null){
+                if (ed1 == null){
                     ed1.setText("");
                 }
                 else {
-                    Res1=Float.parseFloat(ed1.getText()+"");
-                    Sub=true;
+                    Res1 = Float.parseFloat(ed1.getText() + "");
+                    Sub = true;
                     ed1.setText(null);
                 }
             }
@@ -136,11 +136,11 @@ public class MainActivity extends AppCompatActivity {
         btnMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ed1==null){
+                if (ed1 == null){
                     ed1.setText("");
                 }
                 else {
-                    Res1=Float.parseFloat(ed1.getText()+"");
+                    Res1 = Float.parseFloat(ed1.getText() + "");
                     Mul=true;
                     ed1.setText(null);
                 }
@@ -150,12 +150,12 @@ public class MainActivity extends AppCompatActivity {
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ed1==null){
+                if (ed1 == null){
                     ed1.setText("");
                 }
                 else {
-                    Res1=Float.parseFloat(ed1.getText()+"");
-                    Div=true;
+                    Res1 = Float.parseFloat(ed1.getText() + "");
+                    Div = true;
                     ed1.setText(null);
                 }
             }
@@ -164,29 +164,30 @@ public class MainActivity extends AppCompatActivity {
         btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Res2=Float.parseFloat(ed1.getText()+"");
-                if (Add==true){
-                    ed1.setText(Res1+Res2+"");
-                    Add=false;
+                Res2 = Float.parseFloat(ed1.getText() + "");
+                if (Add == true){
+                    ed1.setText(Res1 + Res2 + "");
+                    Add = false;
                 }
-                if (Sub==true){
-                    ed1.setText(Res1-Res2+"");
+                if (Sub == true){
+                    ed1.setText(Res1 - Res2 + "");
                     Sub=false;
                 }
-                if (Mul==true){
-                    ed1.setText(Res1*Res2+"");
-                    Mul=false;
+                if (Mul == true){
+                    ed1.setText(Res1 * Res2 + "");
+                    Mul = false;
                 }
-                if (Div==true){
-                    ed1.setText(Res1/Res2+"");
-                    Div=false;
+                if (Div == true){
+                    ed1.setText(Res1 / Res2 + "");
+                    Div = false;
                 }
             }
         });
 
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 ed1.setText("");
             }
         });
